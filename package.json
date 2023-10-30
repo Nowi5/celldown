@@ -1,7 +1,8 @@
 {
-  "name": "md-spa-vue-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "celldown",
+  "version": "1.0.0",
+  "description": "A tool to convert spreadsheet tables to Markdown",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
