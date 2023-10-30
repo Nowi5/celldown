@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/160d44f8-4790-427d-ae00-9966b674da84/deploy-status)](https://app.netlify.com/sites/shimmering-cassata-4a9e55/deploys)
+
 # Celldown
 A small tool that swiftly converts spreadsheet tables into neat Markdown format.
 Table to Markdown is designed to help users transform tables from spreadsheet applications and websites into well-formatted Markdown tables with ease. Whether you're copying from Microsoft Excel, Google Sheets, or any modern spreadsheet application, Table to Markdown is here to streamline your workflow.
