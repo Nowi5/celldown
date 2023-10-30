@@ -5,13 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+
+    <nav class="navbar is-light mb-3" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="/img/logo.png" alt="Logo">
+          Celldown: Excel to Markdown Made Elegant
+        </a>
+
+        <!--
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        -->
+
+      </div>
+      <!--
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="button" href="https://github.com/">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      -->
+    </nav>
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+
+    <div class="container mt-3 p-3">
+      <div class="columns is-multiline">
+  
+          <!-- Main Content -->
+          <main class="column is-full-mobile is-full-tablet is-half-desktop">
+              <div id="app"></div>
+          </main>
+  
+          <!-- Side Column (Aside) -->
+          <aside class="column is-full-mobile is-full-tablet is-half-desktop">
+            <div class="box">
+        
+                <!-- Title -->
+                <h1 class="title is-4">Table to Markdown</h1>
+        
+                <!-- Description -->
+                <p class="content">
+                    Convert cells seamlessly from Microsoft Excel, Google Sheet, LibreOffice Calc, and other leading spreadsheet applications into Markdown.
+                </p>
+        
+                <!-- How it Works -->
+                <h2 class="subtitle is-5">How it works:</h2>
+                <p class="content">
+                    Transferring data from Excel to Markdown is a breeze. Here's why: whenever you copy cells from a spreadsheet tool, the copied data is stored in two forms - plain text and as an HTML table. This dual-format copying lets you paste Excel cells into applications like Microsoft Word, while retaining the table structure. Table to Markdown leverages this HTML format. Transform your spreadsheet cells into neat Markdown with these steps:
+                </p>
+                <div class="content">
+                  <ol class="is-upper-roman">
+                      <li>Select cells for conversion.</li>
+                      <li>Copy them (Right-click &gt; "Copy" or Ctrl+C for Windows, Command+C for macOS).</li>
+                      <li>Paste into the Table to Markdown paste area (Right-click &gt; "Paste" or Ctrl+V for Windows, Command+V for macOS).</li>
+                      <li>Voilà, your Markdown table is ready!</li>
+                  </ol>
+              </div>
+                <p class="content">
+                    Example table:
+                </p>
+                <pre>| Format   | Grooviness |<br>| -------- | ---------- |<br>| HTML     | Medium     |<br>| Markdown | High       |</pre>
+        
+            </div>
+        </aside> 
+        </div>
+    </div>
+   
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+        Celldown: A tool that turns spreadsheet tables into Markdown format. Made with ❤️ and free for you. Hobby project to use Markdown in context of ChatGPT and GPT-4.
+        View on <a href="https://github.com/Nowi5/celldown">GitHub</a>.
+        </p>
+      </div>
+    </footer>
+
     <!-- built files will be auto injected -->
   </body>
 </html>

@@ -1,26 +1,20 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template> 
+  <h1 class="title is-3" >Convert spreadsheet cells to Markdown</h1>
+  <h2 class="subtitle">Copy & Paste your Excel Cells into the textfield below. It will be converterd to a Markdown Table.</h2>
+  <MarkdownConverterComponent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MarkdownConverterComponent from './components/MarkdownConverterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MarkdownConverterComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "~bulma/css/bulma.css";
 </style>
